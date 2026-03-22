@@ -449,7 +449,7 @@ a:hover { color: var(--color-gold-hover); }
 .btn--outline {
   background: transparent;
   color: var(--color-text);
-  border: 1px solid var(--color-border);
+  border: 1px solid rgba(240, 237, 230, 0.4);
 }
 
 .btn--outline:hover {
@@ -533,6 +533,9 @@ a:hover { color: var(--color-gold-hover); }
   position: absolute;
   inset: 0;
   z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero__bg img {
@@ -583,7 +586,7 @@ a:hover { color: var(--color-gold-hover); }
 
 .hero__subtitle {
   font-size: var(--text-lg);
-  color: var(--color-text-muted);
+  color: rgba(240, 237, 230, 0.8);
   margin-bottom: var(--space-8);
   max-width: 560px;
   line-height: 1.6;
@@ -593,6 +596,16 @@ a:hover { color: var(--color-gold-hover); }
   display: flex;
   gap: var(--space-4);
   flex-wrap: wrap;
+}
+
+.hero__ctas .btn--outline {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.hero__ctas .btn--outline:hover {
+  color: var(--color-gold);
+  border-color: var(--color-gold);
 }
 
 /* Page Hero (smaller, for inner pages) */
@@ -606,6 +619,9 @@ a:hover { color: var(--color-gold-hover); }
   position: absolute;
   inset: 0;
   z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .page-hero__bg img {
