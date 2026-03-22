@@ -1,5 +1,5 @@
 /* ============================================================
-   Benjamin Gao Realtor — main.js
+   Demo Chen Realtor — main.js
    Navigation, Theme Toggle, Scroll Reveal, FAQ, Chat Bubble,
    Newsletter Form, Mobile Nav
    ============================================================ */
@@ -204,18 +204,18 @@
   function getBotReply(text) {
     const lower = text.toLowerCase();
     if (lower.includes('condo') || lower.includes('price')) {
-      return 'UBC condos typically range from $550K for a studio to $1.3M for a 2-bedroom. Want me to have Benjamin send you current listings?';
+      return 'UBC condos typically range from $550K for a studio to $1.3M for a 2-bedroom. Want me to have Demo send you current listings?';
     }
     if (lower.includes('school')) {
       return 'UBC has excellent schools including Norma Rose Point Elementary and University Hill Secondary. The catchment area significantly impacts property values.';
     }
     if (lower.includes('book') || lower.includes('consult')) {
-      return 'I\'d love to set up a consultation for you! You can book directly at <a href="https://cal.com/example" target="_blank" style="color:var(--color-gold)">cal.com/example</a> or call Benjamin at 236-966-7384.';
+      return 'I\'d love to set up a consultation for you! You can book directly at <a href="https://cal.com/example" target="_blank" style="color:var(--color-gold)">cal.com/example</a> or call Demo at 236-123-4567.';
     }
     if (lower.includes('sell')) {
-      return 'Benjamin can provide a free market evaluation of your home. His listings average just 12 days on market! Would you like to schedule a home evaluation?';
+      return 'Demo can provide a free market evaluation of your home. His listings average just 12 days on market! Would you like to schedule a home evaluation?';
     }
-    return 'Thanks for your message! Benjamin will get back to you within the hour. In the meantime, feel free to browse our <a href="listings.html" style="color:var(--color-gold)">current listings</a> or <a href="communities/ubc.html" style="color:var(--color-gold)">neighborhood guides</a>.';
+    return 'Thanks for your message! Demo will get back to you within the hour. In the meantime, feel free to browse our <a href="listings.html" style="color:var(--color-gold)">current listings</a> or <a href="communities/ubc.html" style="color:var(--color-gold)">neighborhood guides</a>.';
   }
 
   function escapeHtml(text) {

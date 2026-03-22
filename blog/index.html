@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Real Estate Blog — UBC &amp; Vancouver Westside Insights | Demo Chen</title>
+<meta name="description" content="Expert real estate insights for UBC and Vancouver's Westside. Buying guides, neighborhood comparisons, school catchment analysis, and tips for first-time buyers and new immigrants.">
+
+<!-- OG Tags -->
+<meta property="og:title" content="Real Estate Blog — UBC &amp; Vancouver Westside Insights | Demo Chen">
+<meta property="og:description" content="Expert real estate insights for UBC and Vancouver's Westside. Buying guides, neighborhood comparisons, school catchment analysis, and tips for first-time buyers and new immigrants.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+
+<!-- JSON-LD: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://example.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://example.com/blog/"
+    }
+  ]
+}
+</script>
+
+<!-- JSON-LD: Blog -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Demo Chen Real Estate Blog",
+  "description": "Expert real estate insights for UBC and Vancouver's Westside",
+  "author": {
+    "@type": "Person",
+    "name": "Demo Chen",
+    "telephone": "236-123-4567",
+    "email": "demo@deploygrow.com"
+  },
+  "creator": {
+    "@type": "SoftwareApplication",
+    "name": "Perplexity Computer",
+    "url": "https://www.perplexity.ai/computer"
+  }
+}
+</script>
+
+<style>
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+    margin-top: var(--space-8);
+  }
+  @media (max-width: 1024px) {
+    .blog-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 640px) {
+    .blog-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .blog-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  }
+  .blog-card__img-wrap {
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+    position: relative;
+  }
+  .blog-card__img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  .blog-card:hover .blog-card__img-wrap img {
+    transform: scale(1.05);
+  }
+  .blog-card__body {
+    padding: var(--space-5) var(--space-5) var(--space-6);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .blog-card__meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-3);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .blog-card__meta span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .blog-card__meta svg {
+    width: 14px;
+    height: 14px;
+  }
+  .blog-card__title {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    line-height: 1.3;
+    margin-bottom: var(--space-3);
+    color: var(--color-text);
+  }
+  .blog-card__title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  .blog-card__title a:hover {
+    color: var(--color-gold);
+  }
+  .blog-card__excerpt {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--space-4);
+    flex: 1;
+  }
+  .blog-card__link {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-gold);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: gap 0.2s ease;
+  }
+  .blog-card__link:hover {
+    gap: 8px;
+  }
+  .blog-intro {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .blog-intro p {
+    font-size: var(--text-base);
+    color: var(--color-text-muted);
+    line-height: 1.7;
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__logo">
+      <svg class="nav__logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
+        <path d="M10 26V14l8-6 8 6v12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="15" y="20" width="6" height="6" stroke="currentColor" stroke-width="1.5" rx="1"/>
+      </svg>
+      Demo Chen
+    </a>
+    <ul class="nav__links">
+      <li><a href="../index.html" class="nav__link">Home</a></li>
+      <li class="nav__dropdown">
+        <a href="#" class="nav__link nav__dropdown-trigger">Neighborhoods <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="nav__dropdown-menu">
+          <a href="../communities/ubc.html" class="nav__dropdown-item">UBC</a>
+          <a href="../communities/point-grey.html" class="nav__dropdown-item">Point Grey</a>
+          <a href="../communities/dunbar.html" class="nav__dropdown-item">Dunbar</a>
+          <a href="../communities/wesbrook-village.html" class="nav__dropdown-item">Wesbrook Village</a>
+        </div>
+      </li>
+      <li><a href="../buy.html" class="nav__link">Buy</a></li>
+      <li><a href="../sell.html" class="nav__link">Sell</a></li>
+      <li><a href="../listings.html" class="nav__link">Listings</a></li>
+      <li><a href="../about.html" class="nav__link">About</a></li>
+      <li><a href="../blog/" class="nav__link">Blog</a></li>
+      <li><a href="../contact.html" class="nav__link">Contact</a></li>
+    </ul>
+    <div class="nav__actions">
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"></button>
+      <a href="https://cal.com/example" class="btn btn--gold btn--sm" target="_blank">Book a Call</a>
+    </div>
+    <button class="nav__hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav__mobile">
+    <a href="../index.html" class="nav__mobile-link">Home</a>
+    <a href="#" class="nav__mobile-link nav__mobile-dropdown-trigger">Neighborhoods</a>
+    <div class="nav__mobile-sub">
+      <a href="../communities/ubc.html">UBC</a>
+      <a href="../communities/point-grey.html">Point Grey</a>
+      <a href="../communities/dunbar.html">Dunbar</a>
+      <a href="../communities/wesbrook-village.html">Wesbrook Village</a>
+    </div>
+    <a href="../buy.html" class="nav__mobile-link">Buy</a>
+    <a href="../sell.html" class="nav__mobile-link">Sell</a>
+    <a href="../listings.html" class="nav__mobile-link">Listings</a>
+    <a href="../about.html" class="nav__mobile-link">About</a>
+    <a href="../blog/" class="nav__mobile-link">Blog</a>
+    <a href="../contact.html" class="nav__mobile-link">Contact</a>
+    <div class="nav__mobile-cta">
+      <a href="https://cal.com/example" class="btn btn--gold btn--full" target="_blank">Book a Call</a>
+    </div>
+    <button class="theme-toggle theme-toggle-mobile" data-theme-toggle-mobile aria-label="Toggle theme"></button>
+  </div>
+</nav>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="page-hero__bg">
+    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80" alt="Modern glass skyscrapers against blue sky" loading="eager">
+  </div>
+  <div class="page-hero__overlay"></div>
+  <div class="container page-hero__content">
+    <ul class="page-hero__breadcrumb reveal">
+      <li><a href="../index.html">Home</a></li>
+      <li><span>/</span></li>
+      <li>Blog</li>
+    </ul>
+    <h1 class="page-hero__title reveal">Blog</h1>
+    <p class="page-hero__subtitle reveal reveal--delay-1">Real estate insights, buying guides, and neighborhood deep-dives for UBC and Vancouver's Westside.</p>
+  </div>
+</section>
+
+<!-- Blog Listing -->
+<section class="section" style="padding-block: clamp(3rem, 8vw, 6rem);">
+  <div class="container">
+
+    <div class="blog-intro reveal">
+      <p>Whether you're a first-time buyer, a seasoned investor, or new to Canada, our articles cover everything you need to make confident real estate decisions in Vancouver's most sought-after neighborhoods.</p>
+    </div>
+
+    <div class="blog-grid">
+
+      <!-- Article 1 -->
+      <article class="blog-card reveal">
+        <div class="blog-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&q=80" alt="Modern UBC condo building with mountain views" loading="lazy">
+        </div>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              March 18, 2026
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              12 min read
+            </span>
+          </div>
+          <h3 class="blog-card__title">
+            <a href="ubc-condo-buying-guide-2026.html">The Complete Guide to Buying a Condo at UBC in 2026</a>
+          </h3>
+          <p class="blog-card__excerpt">Everything you need to know about UBC's unique land-lease system, current condo prices by building, and the best strategies for securing your ideal unit. A step-by-step walkthrough from search to closing.</p>
+          <a href="ubc-condo-buying-guide-2026.html" class="blog-card__link">Read More &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="blog-card reveal reveal--delay-1">
+        <div class="blog-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80" alt="Tree-lined residential street in Vancouver Westside" loading="lazy">
+        </div>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              March 14, 2026
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              10 min read
+            </span>
+          </div>
+          <h3 class="blog-card__title">
+            <a href="point-grey-vs-dunbar.html">Point Grey vs. Dunbar: Which Vancouver Westside Neighborhood Is Right for You?</a>
+          </h3>
+          <p class="blog-card__excerpt">Two of Vancouver's most desirable Westside neighborhoods compared head-to-head. We break down housing prices, walkability, schools, and lifestyle to help you choose.</p>
+          <a href="point-grey-vs-dunbar.html" class="blog-card__link">Read More &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="blog-card reveal reveal--delay-2">
+        <div class="blog-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80" alt="School building exterior with green grounds" loading="lazy">
+        </div>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              March 10, 2026
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              8 min read
+            </span>
+          </div>
+          <h3 class="blog-card__title">
+            <a href="ubc-school-catchment-guide.html">UBC School Catchment Guide: How School Zones Affect Property Values</a>
+          </h3>
+          <p class="blog-card__excerpt">Discover why the UBC school catchment is one of BC's most sought-after, and how proximity to Norma Rose Point Elementary and University Hill Secondary impacts home prices by 10–15%.</p>
+          <a href="ubc-school-catchment-guide.html" class="blog-card__link">Read More &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Article 4 -->
+      <article class="blog-card reveal">
+        <div class="blog-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80" alt="Couple looking at new home with keys in hand" loading="lazy">
+        </div>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              March 6, 2026
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              15 min read
+            </span>
+          </div>
+          <h3 class="blog-card__title">
+            <a href="vancouver-first-time-buyer-guide.html">First-Time Home Buyer's Guide to Vancouver (2026 Edition)</a>
+          </h3>
+          <p class="blog-card__excerpt">Navigate Vancouver's competitive market with confidence. From mortgage pre-approval and government incentives to making winning offers, this is your complete roadmap to homeownership.</p>
+          <a href="vancouver-first-time-buyer-guide.html" class="blog-card__link">Read More &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Article 5 -->
+      <article class="blog-card reveal reveal--delay-1">
+        <div class="blog-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=600&q=80" alt="Vancouver skyline with harbor and mountains" loading="lazy">
+        </div>
+        <div class="blog-card__body">
+          <div class="blog-card__meta">
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              March 2, 2026
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              14 min read
+            </span>
+          </div>
+          <h3 class="blog-card__title">
+            <a href="new-immigrant-buying-home-vancouver.html">New Immigrant's Guide to Buying a Home in Vancouver</a>
+          </h3>
+          <p class="blog-card__excerpt">Moving to Vancouver and ready to buy? Learn about credit building, mortgage options for newcomers, the Speculation and Vacancy Tax, and which neighborhoods offer the best value for new Canadians.</p>
+          <a href="new-immigrant-buying-home-vancouver.html" class="blog-card__link">Read More &rarr;</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section reveal">
+  <div class="container" style="text-align: center;">
+    <h2 class="cta-section__title">Have a Real Estate Question?</h2>
+    <p class="cta-section__text">Whether you're buying your first home or exploring investment opportunities, Demo is here to help with expert, personalized advice.</p>
+    <div class="cta-section__actions">
+      <a href="https://cal.com/example" class="btn btn--gold" target="_blank">Book a Free Consultation</a>
+      <a href="../contact.html" class="btn btn--outline">Send a Message</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a href="../index.html" class="nav__logo" style="margin-bottom: var(--space-2);">
+          <svg class="nav__logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
+            <path d="M10 26V14l8-6 8 6v12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="15" y="20" width="6" height="6" stroke="currentColor" stroke-width="1.5" rx="1"/>
+          </svg>
+          Demo Chen
+        </a>
+        <p class="footer__brand-desc">Your trusted UBC & Vancouver Westside real estate specialist. 8 years of experience helping families find their perfect home.</p>
+        <div class="footer__contact-info">
+          <div>Vancouver, BC, Canada</div>
+          <div><a href="tel:236-123-4567">236-123-4567</a></div>
+          <div><a href="mailto:demo@deploygrow.com">demo@deploygrow.com</a></div>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer__heading">Neighborhoods</h4>
+        <ul class="footer__links">
+          <li><a href="../communities/ubc.html">UBC</a></li>
+          <li><a href="../communities/point-grey.html">Point Grey</a></li>
+          <li><a href="../communities/dunbar.html">Dunbar</a></li>
+          <li><a href="../communities/wesbrook-village.html">Wesbrook Village</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__heading">Services</h4>
+        <ul class="footer__links">
+          <li><a href="../buy.html">Buy a Home</a></li>
+          <li><a href="../sell.html">Sell Your Home</a></li>
+          <li><a href="../listings.html">Current Listings</a></li>
+          <li><a href="../about.html">About Demo</a></li>
+          <li><a href="../blog/">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__heading">Newsletter</h4>
+        <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-4);">Monthly UBC market insights.</p>
+        <form class="newsletter-form" style="flex-direction:column;max-width:100%;">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit" class="btn btn--gold btn--sm" style="width:100%;">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2026 Demo Chen, REALTOR&reg;. RE/MAX Westcoast. All rights reserved.</p>
+      <div class="footer__socials">
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" aria-label="WeChat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3C5.13 3 2 5.69 2 9c0 1.8 1 3.4 2.5 4.5L4 16l2.5-1.3c.8.3 1.6.4 2.5.4"/><path d="M15 8c-3.31 0-6 2.24-6 5s2.69 5 6 5c.8 0 1.5-.1 2.2-.4L20 19l-.5-2.3C20.7 15.7 21 14.4 21 13c0-2.76-2.69-5-6-5z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+      </div>
+      <p class="footer__attribution"><a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Chat Bubble -->
+<div class="chat-bubble">
+  <button class="chat-bubble__btn" aria-label="Chat with AI Assistant">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    </svg>
+    <span class="chat-bubble__badge"></span>
+  </button>
+</div>
+<div class="chat-window">
+  <div class="chat-window__header">
+    <div class="chat-window__header-info">
+      <div class="chat-window__avatar">DC</div>
+      <div>
+        <div class="chat-window__name">Demo's AI Assistant</div>
+        <div class="chat-window__status">Online</div>
+      </div>
+    </div>
+    <button class="chat-window__close" aria-label="Close chat">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="chat-window__body">
+    <div class="chat-message chat-message--bot">
+      <div class="chat-message__bubble">Hi! I'm Demo's AI assistant. Ask me anything about UBC real estate, or leave your contact info and Demo will reach out personally.</div>
+    </div>
+  </div>
+  <div class="chat-quick-actions">
+    <button class="chat-quick-btn">UBC condo prices?</button>
+    <button class="chat-quick-btn">Best schools near UBC?</button>
+    <button class="chat-quick-btn">Book a consultation</button>
+    <button class="chat-quick-btn">I want to sell my home</button>
+  </div>
+  <div class="chat-window__input">
+    <input type="text" placeholder="Type a message...">
+    <button class="chat-window__send" aria-label="Send">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+    </button>
+  </div>
+</div>
+
+<script src="../main.js"></script>
+</body>
+</html>

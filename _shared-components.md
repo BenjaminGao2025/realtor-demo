@@ -1,4 +1,4 @@
-# Shared HTML Components for Benjamin Gao Realtor Website
+# Shared HTML Components for Demo Chen Realtor Website
 
 ## HEAD BLOCK (for root-level pages)
 ```html
@@ -39,7 +39,7 @@ Same as above but use `../style.css` and `../main.js` paths.
         <path d="M10 26V14l8-6 8 6v12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         <rect x="15" y="20" width="6" height="6" stroke="currentColor" stroke-width="1.5" rx="1"/>
       </svg>
-      Benjamin Gao
+      Demo Chen
     </a>
     <ul class="nav__links">
       <li><a href="index.html" class="nav__link">Home</a></li>
@@ -100,13 +100,13 @@ For community pages (in communities/ subdir), all href links must be prefixed: `
             <path d="M10 26V14l8-6 8 6v12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <rect x="15" y="20" width="6" height="6" stroke="currentColor" stroke-width="1.5" rx="1"/>
           </svg>
-          Benjamin Gao
+          Demo Chen
         </a>
         <p class="footer__brand-desc">Your trusted UBC & Vancouver Westside real estate specialist. 8 years of experience helping families find their perfect home.</p>
         <div class="footer__contact-info">
           <div>Vancouver, BC, Canada</div>
-          <div><a href="tel:236-966-7384">236-966-7384</a></div>
-          <div><a href="mailto:david@davidchenrealty.com">david@davidchenrealty.com</a></div>
+          <div><a href="tel:236-123-4567">236-123-4567</a></div>
+          <div><a href="mailto:demo@deploygrow.com">demo@deploygrow.com</a></div>
         </div>
       </div>
       <div>
@@ -123,7 +123,7 @@ For community pages (in communities/ subdir), all href links must be prefixed: `
           <li><a href="buy.html">Buy a Home</a></li>
           <li><a href="sell.html">Sell Your Home</a></li>
           <li><a href="listings.html">Current Listings</a></li>
-          <li><a href="about.html">About Benjamin</a></li>
+          <li><a href="about.html">About Demo</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -137,7 +137,7 @@ For community pages (in communities/ subdir), all href links must be prefixed: `
       </div>
     </div>
     <div class="footer__bottom">
-      <p class="footer__copy">&copy; 2026 Benjamin Gao, REALTOR&reg;. RE/MAX Westcoast. All rights reserved.</p>
+      <p class="footer__copy">&copy; 2026 Demo Chen, REALTOR&reg;. RE/MAX Westcoast. All rights reserved.</p>
       <div class="footer__socials">
         <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
         <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
@@ -166,9 +166,9 @@ For community pages (in communities/ subdir), all href links must be prefixed: `
 <div class="chat-window">
   <div class="chat-window__header">
     <div class="chat-window__header-info">
-      <div class="chat-window__avatar">BG</div>
+      <div class="chat-window__avatar">DC</div>
       <div>
-        <div class="chat-window__name">Benjamin's AI Assistant</div>
+        <div class="chat-window__name">Demo's AI Assistant</div>
         <div class="chat-window__status">Online</div>
       </div>
     </div>
@@ -178,7 +178,7 @@ For community pages (in communities/ subdir), all href links must be prefixed: `
   </div>
   <div class="chat-window__body">
     <div class="chat-message chat-message--bot">
-      <div class="chat-message__bubble">Hi! I'm Benjamin's AI assistant. Ask me anything about UBC real estate, or leave your contact info and Benjamin will reach out personally.</div>
+      <div class="chat-message__bubble">Hi! I'm Demo's AI assistant. Ask me anything about UBC real estate, or leave your contact info and Demo will reach out personally.</div>
     </div>
   </div>
   <div class="chat-quick-actions">
@@ -197,13 +197,13 @@ For community pages (in communities/ subdir), all href links must be prefixed: `
 ```
 
 ## KEY DETAILS
-- Agent name: Benjamin Gao
+- Agent name: Demo Chen
 - Title: REALTOR® | UBC & Vancouver Westside Specialist
 - Brokerage: RE/MAX Westcoast
 - Service areas: UBC, Point Grey, Dunbar, Kitsilano
 - Languages: English & 中文
 - Experience: 8 years, 200+ transactions, $380M+ volume
-- Email: david@davidchenrealty.com
-- Phone: 236-966-7384
+- Email: demo@deploygrow.com
+- Phone: 236-123-4567
 - Booking: https://cal.com/example
 - Gold accent: #d4a853
